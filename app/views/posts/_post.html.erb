@@ -1,0 +1,12 @@
+<div id="<%= dom_id post %>">
+  <p>
+    <strong>Title:</strong>
+    <%= post.title %>
+  </p>
+
+  <p>
+    <strong>Cover:</strong>
+    <%= link_to post.cover.filename, post.cover if post.cover.attached? %>
+  </p>
+
+</div>
